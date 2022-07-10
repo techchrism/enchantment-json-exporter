@@ -17,6 +17,7 @@ repositories {
 dependencies {
     shadow(kotlin("stdlib-jdk8"))
     shadow("net.md-5:SpecialSource:1.11.0")
+    shadow("com.google.code.gson:gson:2.9.0")
 }
 
 minecraft {

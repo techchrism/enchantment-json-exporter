@@ -11,12 +11,10 @@ import net.minecraft.world.item.enchantment.Enchantment
 import net.minecraft.world.item.enchantment.EnchantmentCategory
 import java.io.OutputStream
 import java.io.PrintStream
+import java.util.function.Supplier
 
-
-
-
-class Executor : Runnable {
-    override fun run() {
+class Executor : Supplier<String> {
+    override fun get(): String {
         // Set up Minecraft constants and bootstrap
         val stdout = System.out
         val stderr = System.err
@@ -28,10 +26,9 @@ class Executor : Runnable {
         System.setOut(stdout)
         System.setErr(stderr)
 
-        // Print generated json
+        // Return generated json
         val gson = GsonBuilder().setPrettyPrinting().create()
-        val generatedString = gson.toJson(generate())
-        println(generatedString)
+        return gson.toJson(generate())
     }
 
     private fun generate(): JsonObject {

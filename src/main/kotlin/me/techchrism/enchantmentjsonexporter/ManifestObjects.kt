@@ -19,3 +19,20 @@ data class LatestVersions(
     val release: String,
     val snapshot: String
 )
+
+data class VersionDownload(
+    val sha1: String,
+    val size: Int,
+    val url: String
+)
+
+data class VersionDownloads(
+    val client: VersionDownload,
+    val client_mappings: VersionDownload,
+    val server: VersionDownload,
+    val server_mappings: VersionDownload
+)
+
+data class VersionJson(
+    val downloads: VersionDownloads
+)
