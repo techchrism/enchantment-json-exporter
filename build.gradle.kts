@@ -1,9 +1,10 @@
-import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
+import com.github.jengelman.gradle.plugins.shadow.tasks.ShadowJar
 
 plugins {
     kotlin("jvm") version "1.7.0"
     // Need snapshot version for https://github.com/SpongePowered/VanillaGradle/issues/72
     id("org.spongepowered.gradle.vanilla") version "0.2.1-SNAPSHOT"
+    id("com.github.johnrengelman.shadow") version "7.0.0"
 }
 
 group = "me.techchrism"
@@ -13,13 +14,24 @@ repositories {
     mavenCentral()
 }
 
-tasks.withType<KotlinCompile> {
-    kotlinOptions.jvmTarget = "1.8"
+dependencies {
+    shadow(kotlin("stdlib-jdk8"))
+    shadow("net.md-5:SpecialSource:1.11.0")
 }
 
 minecraft {
     version("1.19")
-    runs {
-        server()
+    platform(org.spongepowered.gradle.vanilla.repository.MinecraftPlatform.SERVER)
+}
+
+tasks.withType<Jar> {
+    manifest {
+        attributes["Main-Class"] = "me.techchrism.enchantmentjsonexporter.CommandLine"
+    }
+}
+
+tasks {
+    named<ShadowJar>("shadowJar") {
+        configurations = listOf(project.configurations.shadow.get())
     }
 }
