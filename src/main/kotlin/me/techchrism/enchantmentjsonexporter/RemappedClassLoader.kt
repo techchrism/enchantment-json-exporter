@@ -22,8 +22,7 @@ class RemappedClassLoader(
     private val manuallyRemapPackages = HashSet<String>()
     
     init {
-        println("Loading...")
-        val start = System.currentTimeMillis()
+        registerAsParallelCapable()
         
         // Inverse mapping for quick class calculation
         for((key, value) in mapping.classes) {
@@ -51,9 +50,6 @@ class RemappedClassLoader(
         
         repo = ExtractedClassRepo(jarContents)
         remapper = JarRemapper(mapping)
-
-        val end = System.currentTimeMillis()
-        println("Done! Took ${end - start}ms")
     }
     
     fun reloadClass(clazz: Class<*>): Class<*> {
@@ -76,7 +72,6 @@ class RemappedClassLoader(
     }
     
     override fun loadClass(name: String): Class<*> {
-        
         val classPath = name.replace('.', '/')
         
         val obfuscatedName = inverseMappedClasses[classPath]
@@ -103,7 +98,7 @@ class RemappedClassLoader(
             }
             
             if(manuallyRemapPackages.any { name.startsWith(it) }) {
-                val classByteStream = super.getResourceAsStream("$classPath.class") ?: throw ClassNotFoundException("Custom could not find $name")
+                val classByteStream = super.getResourceAsStream(fileName) ?: throw ClassNotFoundException("Custom could not find $name")
                 val classBytes = classByteStream.readAllBytes()
                 classByteStream.close()
 

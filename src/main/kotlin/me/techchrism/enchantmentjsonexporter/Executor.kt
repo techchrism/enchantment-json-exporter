@@ -9,18 +9,29 @@ import net.minecraft.network.chat.Component
 import net.minecraft.server.Bootstrap
 import net.minecraft.world.item.enchantment.Enchantment
 import net.minecraft.world.item.enchantment.EnchantmentCategory
+import java.io.OutputStream
+import java.io.PrintStream
+
+
+
 
 class Executor : Runnable {
     override fun run() {
         // Set up Minecraft constants and bootstrap
         val stdout = System.out
+        val stderr = System.err
+        System.setErr(PrintStream(object : OutputStream() {
+            override fun write(b: Int) {}
+        }))
         SharedConstants.tryDetectVersion()
         Bootstrap.bootStrap()
         System.setOut(stdout)
+        System.setErr(stderr)
 
         // Print generated json
         val gson = GsonBuilder().setPrettyPrinting().create()
-        println(gson.toJson(generate()))
+        val generatedString = gson.toJson(generate())
+        println(generatedString)
     }
 
     private fun generate(): JsonObject {

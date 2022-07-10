@@ -10,5 +10,9 @@ fun main(args: Array<String>) {
         return
     }
     
+    //val startTime = System.currentTimeMillis()
     ServerJarLoader.remapJar(JarInputStream(FileInputStream(args[0])), FileInputStream(args[1]))
+    //val endTime = System.currentTimeMillis()
+
+    //println("Total time taken: ${endTime - startTime}ms")
 }
