@@ -1,0 +1,44 @@
+{
+  "latest": {
+    "release": "1.19",
+    "snapshot": "1.19.1-pre3"
+  },
+  "listings": [
+    {
+      "id": "1.19",
+      "url": "./versions/1.19.json",
+      "type": "release",
+      "releaseTime": "Jun 7, 2022, 9:42:18 AM"
+    },
+    {
+      "id": "22w24a",
+      "url": "./versions/22w24a.json",
+      "type": "snapshot",
+      "releaseTime": "Jun 15, 2022, 4:21:49 PM"
+    },
+    {
+      "id": "1.19.1-pre1",
+      "url": "./versions/1.19.1-pre1.json",
+      "type": "snapshot",
+      "releaseTime": "Jun 21, 2022, 5:13:59 PM"
+    },
+    {
+      "id": "1.19.1-rc1",
+      "url": "./versions/1.19.1-rc1.json",
+      "type": "snapshot",
+      "releaseTime": "Jun 23, 2022, 4:32:41 PM"
+    },
+    {
+      "id": "1.19.1-pre2",
+      "url": "./versions/1.19.1-pre2.json",
+      "type": "snapshot",
+      "releaseTime": "Jun 30, 2022, 3:57:20 PM"
+    },
+    {
+      "id": "1.19.1-pre3",
+      "url": "./versions/1.19.1-pre3.json",
+      "type": "snapshot",
+      "releaseTime": "Jul 6, 2022, 2:50:46 PM"
+    }
+  ]
+}
