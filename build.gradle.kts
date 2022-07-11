@@ -35,4 +35,8 @@ tasks {
     named<ShadowJar>("shadowJar") {
         configurations = listOf(project.configurations.shadow.get())
     }
+
+    named("build"){
+        dependsOn(shadowJar)
+    }
 }
