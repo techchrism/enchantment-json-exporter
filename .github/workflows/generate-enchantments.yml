@@ -27,6 +27,9 @@ jobs:
         
       - name: Run built jar
         run: 'java -jar $(find ./build/libs -type f -name *-all.jar)'
+        with:
+          env:
+            URL_PREFIX: ${{ secrets.URL_PREFIX }}
         
       - name: Commit Changes
         if: always()
