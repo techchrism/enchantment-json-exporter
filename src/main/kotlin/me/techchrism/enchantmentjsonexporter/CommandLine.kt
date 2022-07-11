@@ -74,8 +74,6 @@ fun prepareJsonFiles() {
         println("Loading missing version ${missing.id}...")
         var outputString: String
         try {
-            //TODO remove testing exception
-            if(missing.id == "1.19.1-pre4") throw Exception("Testing exception")
             val versionJson = ServerJarLoader.loadVersionJson(missing.url)
             outputString = ServerJarLoader.getEnchantmentsForVersionJson(versionJson)
             versionsMeta.add(VersionListing(
