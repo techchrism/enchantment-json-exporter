@@ -37,7 +37,7 @@ class Executor : Supplier<String> {
 
         val rootObj = JsonObject()
         rootObj.addProperty("version", SharedConstants.getCurrentVersion().releaseTarget)
-        rootObj.addProperty("exporter_version", "1.0.0")
+        rootObj.addProperty("exporter_version", ServerJarLoader.VERSION)
 
         // Rarities
         val rarities = JsonArray()

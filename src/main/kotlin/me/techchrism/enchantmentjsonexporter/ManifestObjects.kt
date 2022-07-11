@@ -1,5 +1,7 @@
 package me.techchrism.enchantmentjsonexporter
 
+import java.util.*
+
 data class VersionManifestV2(
     val latest: LatestVersions,
     val versions: List<VersionV2>
@@ -9,8 +11,8 @@ data class VersionV2(
     val id: String,
     val type: String,
     val url: String,
-    val time: String,
-    val releaseTime: String,
+    val time: Date,
+    val releaseTime: Date,
     val sha1: String,
     val complianceLevel: Int
 )
@@ -36,3 +38,7 @@ data class VersionDownloads(
 data class VersionJson(
     val downloads: VersionDownloads
 )
+
+data class VersionListing(val id: String, val url: String, val type: String, val releaseTime: Date)
+
+data class VersionsListings(val latest: LatestVersions, val listings: List<VersionListing>)
