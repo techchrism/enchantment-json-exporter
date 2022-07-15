@@ -56,6 +56,7 @@ class Executor : Supplier<String> {
 
             rarities.add(rarityObject)
         }
+        rootObj.add("rarities", rarities)
 
         // Categories
         val categories = JsonArray()
