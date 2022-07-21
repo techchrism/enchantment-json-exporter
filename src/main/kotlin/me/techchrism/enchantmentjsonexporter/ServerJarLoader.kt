@@ -12,7 +12,7 @@ import java.util.jar.JarInputStream
 
 class ServerJarLoader {
     companion object {
-        const val VERSION = "1.0.1"
+        const val VERSION = "1.2.0"
         
         fun loadVersionManifest(): VersionManifestV2 {
             val jsonText = URL("https://piston-meta.mojang.com/mc/game/version_manifest_v2.json").readText()

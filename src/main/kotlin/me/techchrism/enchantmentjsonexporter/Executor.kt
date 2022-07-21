@@ -7,6 +7,7 @@ import net.minecraft.SharedConstants
 import net.minecraft.core.Registry
 import net.minecraft.network.chat.Component
 import net.minecraft.server.Bootstrap
+import net.minecraft.world.item.ItemStack
 import net.minecraft.world.item.enchantment.Enchantment
 import net.minecraft.world.item.enchantment.EnchantmentCategory
 import java.io.OutputStream
@@ -81,9 +82,10 @@ class Executor : Supplier<String> {
         val enchantsArray = JsonArray()
         for ((key, e) in Registry.ENCHANTMENT.entrySet()) {
             val enchantObject = JsonObject()
+            val enchantmentCategory = (typeField[e] as EnchantmentCategory)
             enchantObject.addProperty("id", key.location().toString())
             enchantObject.addProperty("name", Component.translatable(e.descriptionId).string)
-            enchantObject.addProperty("category", (typeField[e] as EnchantmentCategory).name)
+            enchantObject.addProperty("category", enchantmentCategory.name)
             enchantObject.addProperty("min_level", e.minLevel)
             enchantObject.addProperty("max_level", e.maxLevel)
             enchantObject.addProperty("rarity", e.rarity.name)
@@ -91,6 +93,16 @@ class Executor : Supplier<String> {
             enchantObject.addProperty("is_discoverable", e.isDiscoverable)
             enchantObject.addProperty("is_tradeable", e.isTradeable)
             enchantObject.addProperty("is_treasure_only", e.isTreasureOnly)
+            val secondaryItemsArray = JsonArray()
+            for ((key, item) in Registry.ITEM.entrySet()) {
+                if (!enchantmentCategory.canEnchant(item) && e.canEnchant(ItemStack(item))) {
+                    val itemObject = JsonObject()
+                    itemObject.addProperty("id", key.location().toString())
+                    itemObject.addProperty("name", item.description.string)
+                    secondaryItemsArray.add(itemObject)
+                }
+            }
+            enchantObject.add("secondary_items", secondaryItemsArray)
 
             // Go through enchantments to determine what's incompatible
             val incompatibles = JsonArray()
