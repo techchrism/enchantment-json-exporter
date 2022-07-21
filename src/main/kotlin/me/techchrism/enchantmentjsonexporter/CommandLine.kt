@@ -4,14 +4,28 @@ package me.techchrism.enchantmentjsonexporter
 import com.google.gson.GsonBuilder
 import com.google.gson.JsonObject
 import java.io.File
+import java.io.FileInputStream
 import java.io.FileOutputStream
 import java.time.Instant
 import java.time.format.DateTimeFormatter
 import java.util.*
+import java.util.jar.JarInputStream
 import kotlin.system.exitProcess
 
 fun main(args: Array<String>) {
-    prepareJsonFiles()
+    if(args.isNotEmpty()) {
+        if(args.size != 2) {
+            println("Arguments: [server jar] [mappings file]")
+            exitProcess(1)
+        }
+
+        println(ServerJarLoader.remapJarForEnchantments(
+            JarInputStream(FileInputStream(args[0])),
+            FileInputStream(args[1])
+        ))
+    } else {
+        prepareJsonFiles()
+    }
 }
 
 fun writeGithubEnvironmentVariable(name: String, value: String) {
