@@ -4,9 +4,12 @@ import com.google.gson.GsonBuilder
 import com.google.gson.JsonArray
 import com.google.gson.JsonObject
 import net.minecraft.SharedConstants
+import net.minecraft.core.DefaultedRegistry
 import net.minecraft.core.Registry
 import net.minecraft.network.chat.Component
+import net.minecraft.resources.ResourceKey
 import net.minecraft.server.Bootstrap
+import net.minecraft.world.item.Item
 import net.minecraft.world.item.ItemStack
 import net.minecraft.world.item.enchantment.Enchantment
 import net.minecraft.world.item.enchantment.EnchantmentCategory
@@ -32,12 +35,35 @@ class Executor : Supplier<String> {
         return gson.toJson(generate())
     }
 
+    private fun shouldUseAlternateRegistry(): Boolean {
+        // Check if above 1.19.2
+        return SharedConstants.getCurrentVersion().dataVersion.version > 3120
+    }
+
+    private fun getItems(): Set<Map.Entry<ResourceKey<Item>, Item>> {
+        if(shouldUseAlternateRegistry()) {
+            return Class.forName("net.minecraft.core.Registry").getMethod("entrySet").invoke(
+                Class.forName("net.minecraft.core.registries.BuiltInRegistries").getField("ITEM").get(null)) as Set<Map.Entry<ResourceKey<Item>, Item>>
+        } else {
+            return Registry.ITEM.entrySet()
+        }
+    }
+
+    private fun getEnchantments(): Set<Map.Entry<ResourceKey<Enchantment>, Enchantment>> {
+        if(shouldUseAlternateRegistry()) {
+            return Class.forName("net.minecraft.core.Registry").getMethod("entrySet").invoke(
+                Class.forName("net.minecraft.core.registries.BuiltInRegistries").getField("ENCHANTMENT").get(null)) as Set<Map.Entry<ResourceKey<Enchantment>, Enchantment>>
+        } else {
+            return Registry.ENCHANTMENT.entrySet()
+        }
+    }
+
     private fun generate(): JsonObject {
         val typeField = Enchantment::class.java.getDeclaredField("category")
         typeField.isAccessible = true
 
         val rootObj = JsonObject()
-        rootObj.addProperty("version", SharedConstants.getCurrentVersion().releaseTarget)
+        rootObj.addProperty("version", SharedConstants.getCurrentVersion().name)
         rootObj.addProperty("exporter_version", ServerJarLoader.VERSION)
 
         // Rarities
@@ -59,13 +85,17 @@ class Executor : Supplier<String> {
         }
         rootObj.add("rarities", rarities)
 
+        val enchantments = getEnchantments()
+        val items = getItems()
+
+
         // Categories
         val categories = JsonArray()
         for (category in EnchantmentCategory.values()) {
             val categoryObject = JsonObject()
             categoryObject.addProperty("name", category.name)
             val itemsArray = JsonArray()
-            for ((key, item) in Registry.ITEM.entrySet()) {
+            for ((key, item) in items) {
                 if (category.canEnchant(item)) {
                     val itemObject = JsonObject()
                     itemObject.addProperty("id", key.location().toString())
@@ -80,7 +110,7 @@ class Executor : Supplier<String> {
 
         // Enchantments
         val enchantsArray = JsonArray()
-        for ((key, e) in Registry.ENCHANTMENT.entrySet()) {
+        for ((key, e) in enchantments) {
             val enchantObject = JsonObject()
             val enchantmentCategory = (typeField[e] as EnchantmentCategory)
             enchantObject.addProperty("id", key.location().toString())
@@ -94,7 +124,7 @@ class Executor : Supplier<String> {
             enchantObject.addProperty("is_tradeable", e.isTradeable)
             enchantObject.addProperty("is_treasure_only", e.isTreasureOnly)
             val secondaryItemsArray = JsonArray()
-            for ((key, item) in Registry.ITEM.entrySet()) {
+            for ((key, item) in items) {
                 if (!enchantmentCategory.canEnchant(item) && e.canEnchant(ItemStack(item))) {
                     val itemObject = JsonObject()
                     itemObject.addProperty("id", key.location().toString())
@@ -106,7 +136,7 @@ class Executor : Supplier<String> {
 
             // Go through enchantments to determine what's incompatible
             val incompatibles = JsonArray()
-            for ((checkKey, value) in Registry.ENCHANTMENT.entrySet()) {
+            for ((checkKey, value) in enchantments) {
                 if (checkKey == key) continue
                 if (!e.isCompatibleWith(value)) {
                     incompatibles.add(checkKey.location().toString())
