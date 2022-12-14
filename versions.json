@@ -1,7 +1,7 @@
 {
   "latest": {
-    "release": "1.19.2",
-    "snapshot": "1.19.2-rc2"
+    "release": "1.19.3",
+    "snapshot": "1.19.3-rc3"
   },
   "listings": [
     {
@@ -93,6 +93,78 @@
       "url": "https://techchrism.github.io/enchantment-json-exporter/versions/1.19.json",
       "type": "release",
       "releaseTime": "Jun 7, 2022, 9:42:18 AM"
+    },
+    {
+      "id": "22w42a",
+      "url": "https://techchrism.github.io/enchantment-json-exporter/versions/22w42a.json",
+      "type": "snapshot",
+      "releaseTime": "Oct 19, 2022, 9:34:22 AM"
+    },
+    {
+      "id": "22w43a",
+      "url": "https://techchrism.github.io/enchantment-json-exporter/versions/22w43a.json",
+      "type": "snapshot",
+      "releaseTime": "Oct 26, 2022, 11:55:59 AM"
+    },
+    {
+      "id": "22w44a",
+      "url": "https://techchrism.github.io/enchantment-json-exporter/versions/22w44a.json",
+      "type": "snapshot",
+      "releaseTime": "Nov 2, 2022, 1:15:43 PM"
+    },
+    {
+      "id": "22w45a",
+      "url": "https://techchrism.github.io/enchantment-json-exporter/versions/22w45a.json",
+      "type": "snapshot",
+      "releaseTime": "Nov 9, 2022, 2:30:16 PM"
+    },
+    {
+      "id": "22w46a",
+      "url": "https://techchrism.github.io/enchantment-json-exporter/versions/22w46a.json",
+      "type": "snapshot",
+      "releaseTime": "Nov 16, 2022, 1:32:50 PM"
+    },
+    {
+      "id": "1.19.3-pre1",
+      "url": "https://techchrism.github.io/enchantment-json-exporter/versions/1.19.3-pre1.json",
+      "type": "snapshot",
+      "releaseTime": "Nov 22, 2022, 1:59:37 PM"
+    },
+    {
+      "id": "1.19.3-pre2",
+      "url": "https://techchrism.github.io/enchantment-json-exporter/versions/1.19.3-pre2.json",
+      "type": "snapshot",
+      "releaseTime": "Nov 23, 2022, 4:12:25 PM"
+    },
+    {
+      "id": "1.19.3-pre3",
+      "url": "https://techchrism.github.io/enchantment-json-exporter/versions/1.19.3-pre3.json",
+      "type": "snapshot",
+      "releaseTime": "Nov 29, 2022, 2:28:08 PM"
+    },
+    {
+      "id": "1.19.3-rc1",
+      "url": "https://techchrism.github.io/enchantment-json-exporter/versions/1.19.3-rc1.json",
+      "type": "snapshot",
+      "releaseTime": "Dec 1, 2022, 1:45:18 PM"
+    },
+    {
+      "id": "1.19.3-rc2",
+      "url": "https://techchrism.github.io/enchantment-json-exporter/versions/1.19.3-rc2.json",
+      "type": "snapshot",
+      "releaseTime": "Dec 5, 2022, 1:21:34 PM"
+    },
+    {
+      "id": "1.19.3-rc3",
+      "url": "https://techchrism.github.io/enchantment-json-exporter/versions/1.19.3-rc3.json",
+      "type": "snapshot",
+      "releaseTime": "Dec 6, 2022, 10:24:01 AM"
+    },
+    {
+      "id": "1.19.3",
+      "url": "https://techchrism.github.io/enchantment-json-exporter/versions/1.19.3.json",
+      "type": "release",
+      "releaseTime": "Dec 7, 2022, 8:17:18 AM"
     }
   ]
 }
