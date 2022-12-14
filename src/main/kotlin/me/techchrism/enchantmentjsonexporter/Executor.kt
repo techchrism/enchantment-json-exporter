@@ -36,8 +36,8 @@ class Executor : Supplier<String> {
     }
 
     private fun shouldUseAlternateRegistry(): Boolean {
-        // Check if above 1.19.2
-        return SharedConstants.getCurrentVersion().dataVersion.version > 3120
+        // Check if above 22w44a
+        return SharedConstants.getCurrentVersion().dataVersion.version > 3207
     }
 
     private fun getItems(): Set<Map.Entry<ResourceKey<Item>, Item>> {
