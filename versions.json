@@ -1,7 +1,7 @@
 {
   "latest": {
     "release": "1.19.3",
-    "snapshot": "23w05a"
+    "snapshot": "23w06a"
   },
   "listings": [
     {
@@ -183,6 +183,12 @@
       "url": "https://techchrism.github.io/enchantment-json-exporter/versions/1.19.json",
       "type": "release",
       "releaseTime": "Jun 7, 2022, 9:42:18 AM"
+    },
+    {
+      "id": "23w06a",
+      "url": "https://techchrism.github.io/enchantment-json-exporter/versions/23w06a.json",
+      "type": "snapshot",
+      "releaseTime": "Feb 8, 2023, 3:00:04 PM"
     }
   ]
 }
