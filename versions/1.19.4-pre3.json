@@ -1,0 +1,1909 @@
+{
+  "version": "1.19.4 Pre-release 3",
+  "exporter_version": "1.2.1",
+  "rarities": [
+    {
+      "name": "COMMON",
+      "weight": 10,
+      "item_cost": 1,
+      "book_cost": 1
+    },
+    {
+      "name": "UNCOMMON",
+      "weight": 5,
+      "item_cost": 2,
+      "book_cost": 1
+    },
+    {
+      "name": "RARE",
+      "weight": 2,
+      "item_cost": 4,
+      "book_cost": 2
+    },
+    {
+      "name": "VERY_RARE",
+      "weight": 1,
+      "item_cost": 8,
+      "book_cost": 4
+    }
+  ],
+  "categories": [
+    {
+      "name": "ARMOR",
+      "items": [
+        {
+          "id": "minecraft:turtle_helmet",
+          "name": "Turtle Shell"
+        },
+        {
+          "id": "minecraft:iron_boots",
+          "name": "Iron Boots"
+        },
+        {
+          "id": "minecraft:leather_helmet",
+          "name": "Leather Cap"
+        },
+        {
+          "id": "minecraft:netherite_helmet",
+          "name": "Netherite Helmet"
+        },
+        {
+          "id": "minecraft:leather_boots",
+          "name": "Leather Boots"
+        },
+        {
+          "id": "minecraft:iron_chestplate",
+          "name": "Iron Chestplate"
+        },
+        {
+          "id": "minecraft:iron_helmet",
+          "name": "Iron Helmet"
+        },
+        {
+          "id": "minecraft:diamond_helmet",
+          "name": "Diamond Helmet"
+        },
+        {
+          "id": "minecraft:golden_boots",
+          "name": "Golden Boots"
+        },
+        {
+          "id": "minecraft:leather_chestplate",
+          "name": "Leather Tunic"
+        },
+        {
+          "id": "minecraft:diamond_boots",
+          "name": "Diamond Boots"
+        },
+        {
+          "id": "minecraft:diamond_leggings",
+          "name": "Diamond Leggings"
+        },
+        {
+          "id": "minecraft:golden_helmet",
+          "name": "Golden Helmet"
+        },
+        {
+          "id": "minecraft:chainmail_chestplate",
+          "name": "Chainmail Chestplate"
+        },
+        {
+          "id": "minecraft:chainmail_helmet",
+          "name": "Chainmail Helmet"
+        },
+        {
+          "id": "minecraft:chainmail_boots",
+          "name": "Chainmail Boots"
+        },
+        {
+          "id": "minecraft:diamond_chestplate",
+          "name": "Diamond Chestplate"
+        },
+        {
+          "id": "minecraft:netherite_chestplate",
+          "name": "Netherite Chestplate"
+        },
+        {
+          "id": "minecraft:netherite_leggings",
+          "name": "Netherite Leggings"
+        },
+        {
+          "id": "minecraft:golden_chestplate",
+          "name": "Golden Chestplate"
+        },
+        {
+          "id": "minecraft:iron_leggings",
+          "name": "Iron Leggings"
+        },
+        {
+          "id": "minecraft:netherite_boots",
+          "name": "Netherite Boots"
+        },
+        {
+          "id": "minecraft:golden_leggings",
+          "name": "Golden Leggings"
+        },
+        {
+          "id": "minecraft:chainmail_leggings",
+          "name": "Chainmail Leggings"
+        },
+        {
+          "id": "minecraft:leather_leggings",
+          "name": "Leather Pants"
+        }
+      ]
+    },
+    {
+      "name": "ARMOR_FEET",
+      "items": [
+        {
+          "id": "minecraft:iron_boots",
+          "name": "Iron Boots"
+        },
+        {
+          "id": "minecraft:leather_boots",
+          "name": "Leather Boots"
+        },
+        {
+          "id": "minecraft:golden_boots",
+          "name": "Golden Boots"
+        },
+        {
+          "id": "minecraft:diamond_boots",
+          "name": "Diamond Boots"
+        },
+        {
+          "id": "minecraft:chainmail_boots",
+          "name": "Chainmail Boots"
+        },
+        {
+          "id": "minecraft:netherite_boots",
+          "name": "Netherite Boots"
+        }
+      ]
+    },
+    {
+      "name": "ARMOR_LEGS",
+      "items": [
+        {
+          "id": "minecraft:diamond_leggings",
+          "name": "Diamond Leggings"
+        },
+        {
+          "id": "minecraft:netherite_leggings",
+          "name": "Netherite Leggings"
+        },
+        {
+          "id": "minecraft:iron_leggings",
+          "name": "Iron Leggings"
+        },
+        {
+          "id": "minecraft:golden_leggings",
+          "name": "Golden Leggings"
+        },
+        {
+          "id": "minecraft:chainmail_leggings",
+          "name": "Chainmail Leggings"
+        },
+        {
+          "id": "minecraft:leather_leggings",
+          "name": "Leather Pants"
+        }
+      ]
+    },
+    {
+      "name": "ARMOR_CHEST",
+      "items": [
+        {
+          "id": "minecraft:iron_chestplate",
+          "name": "Iron Chestplate"
+        },
+        {
+          "id": "minecraft:leather_chestplate",
+          "name": "Leather Tunic"
+        },
+        {
+          "id": "minecraft:chainmail_chestplate",
+          "name": "Chainmail Chestplate"
+        },
+        {
+          "id": "minecraft:diamond_chestplate",
+          "name": "Diamond Chestplate"
+        },
+        {
+          "id": "minecraft:netherite_chestplate",
+          "name": "Netherite Chestplate"
+        },
+        {
+          "id": "minecraft:golden_chestplate",
+          "name": "Golden Chestplate"
+        }
+      ]
+    },
+    {
+      "name": "ARMOR_HEAD",
+      "items": [
+        {
+          "id": "minecraft:turtle_helmet",
+          "name": "Turtle Shell"
+        },
+        {
+          "id": "minecraft:leather_helmet",
+          "name": "Leather Cap"
+        },
+        {
+          "id": "minecraft:netherite_helmet",
+          "name": "Netherite Helmet"
+        },
+        {
+          "id": "minecraft:iron_helmet",
+          "name": "Iron Helmet"
+        },
+        {
+          "id": "minecraft:diamond_helmet",
+          "name": "Diamond Helmet"
+        },
+        {
+          "id": "minecraft:golden_helmet",
+          "name": "Golden Helmet"
+        },
+        {
+          "id": "minecraft:chainmail_helmet",
+          "name": "Chainmail Helmet"
+        }
+      ]
+    },
+    {
+      "name": "WEAPON",
+      "items": [
+        {
+          "id": "minecraft:wooden_sword",
+          "name": "Wooden Sword"
+        },
+        {
+          "id": "minecraft:stone_sword",
+          "name": "Stone Sword"
+        },
+        {
+          "id": "minecraft:diamond_sword",
+          "name": "Diamond Sword"
+        },
+        {
+          "id": "minecraft:netherite_sword",
+          "name": "Netherite Sword"
+        },
+        {
+          "id": "minecraft:golden_sword",
+          "name": "Golden Sword"
+        },
+        {
+          "id": "minecraft:iron_sword",
+          "name": "Iron Sword"
+        }
+      ]
+    },
+    {
+      "name": "DIGGER",
+      "items": [
+        {
+          "id": "minecraft:diamond_axe",
+          "name": "Diamond Axe"
+        },
+        {
+          "id": "minecraft:iron_pickaxe",
+          "name": "Iron Pickaxe"
+        },
+        {
+          "id": "minecraft:wooden_pickaxe",
+          "name": "Wooden Pickaxe"
+        },
+        {
+          "id": "minecraft:wooden_shovel",
+          "name": "Wooden Shovel"
+        },
+        {
+          "id": "minecraft:iron_hoe",
+          "name": "Iron Hoe"
+        },
+        {
+          "id": "minecraft:iron_axe",
+          "name": "Iron Axe"
+        },
+        {
+          "id": "minecraft:diamond_shovel",
+          "name": "Diamond Shovel"
+        },
+        {
+          "id": "minecraft:netherite_shovel",
+          "name": "Netherite Shovel"
+        },
+        {
+          "id": "minecraft:golden_hoe",
+          "name": "Golden Hoe"
+        },
+        {
+          "id": "minecraft:netherite_pickaxe",
+          "name": "Netherite Pickaxe"
+        },
+        {
+          "id": "minecraft:stone_hoe",
+          "name": "Stone Hoe"
+        },
+        {
+          "id": "minecraft:netherite_hoe",
+          "name": "Netherite Hoe"
+        },
+        {
+          "id": "minecraft:stone_axe",
+          "name": "Stone Axe"
+        },
+        {
+          "id": "minecraft:wooden_axe",
+          "name": "Wooden Axe"
+        },
+        {
+          "id": "minecraft:diamond_hoe",
+          "name": "Diamond Hoe"
+        },
+        {
+          "id": "minecraft:golden_pickaxe",
+          "name": "Golden Pickaxe"
+        },
+        {
+          "id": "minecraft:stone_shovel",
+          "name": "Stone Shovel"
+        },
+        {
+          "id": "minecraft:wooden_hoe",
+          "name": "Wooden Hoe"
+        },
+        {
+          "id": "minecraft:iron_shovel",
+          "name": "Iron Shovel"
+        },
+        {
+          "id": "minecraft:diamond_pickaxe",
+          "name": "Diamond Pickaxe"
+        },
+        {
+          "id": "minecraft:golden_axe",
+          "name": "Golden Axe"
+        },
+        {
+          "id": "minecraft:stone_pickaxe",
+          "name": "Stone Pickaxe"
+        },
+        {
+          "id": "minecraft:golden_shovel",
+          "name": "Golden Shovel"
+        },
+        {
+          "id": "minecraft:netherite_axe",
+          "name": "Netherite Axe"
+        }
+      ]
+    },
+    {
+      "name": "FISHING_ROD",
+      "items": [
+        {
+          "id": "minecraft:fishing_rod",
+          "name": "Fishing Rod"
+        }
+      ]
+    },
+    {
+      "name": "TRIDENT",
+      "items": [
+        {
+          "id": "minecraft:trident",
+          "name": "Trident"
+        }
+      ]
+    },
+    {
+      "name": "BREAKABLE",
+      "items": [
+        {
+          "id": "minecraft:turtle_helmet",
+          "name": "Turtle Shell"
+        },
+        {
+          "id": "minecraft:brush",
+          "name": "Brush"
+        },
+        {
+          "id": "minecraft:diamond_axe",
+          "name": "Diamond Axe"
+        },
+        {
+          "id": "minecraft:crossbow",
+          "name": "Crossbow"
+        },
+        {
+          "id": "minecraft:iron_pickaxe",
+          "name": "Iron Pickaxe"
+        },
+        {
+          "id": "minecraft:iron_boots",
+          "name": "Iron Boots"
+        },
+        {
+          "id": "minecraft:leather_helmet",
+          "name": "Leather Cap"
+        },
+        {
+          "id": "minecraft:bow",
+          "name": "Bow"
+        },
+        {
+          "id": "minecraft:wooden_pickaxe",
+          "name": "Wooden Pickaxe"
+        },
+        {
+          "id": "minecraft:wooden_shovel",
+          "name": "Wooden Shovel"
+        },
+        {
+          "id": "minecraft:iron_hoe",
+          "name": "Iron Hoe"
+        },
+        {
+          "id": "minecraft:netherite_helmet",
+          "name": "Netherite Helmet"
+        },
+        {
+          "id": "minecraft:leather_boots",
+          "name": "Leather Boots"
+        },
+        {
+          "id": "minecraft:iron_axe",
+          "name": "Iron Axe"
+        },
+        {
+          "id": "minecraft:diamond_shovel",
+          "name": "Diamond Shovel"
+        },
+        {
+          "id": "minecraft:iron_chestplate",
+          "name": "Iron Chestplate"
+        },
+        {
+          "id": "minecraft:warped_fungus_on_a_stick",
+          "name": "Warped Fungus on a Stick"
+        },
+        {
+          "id": "minecraft:netherite_shovel",
+          "name": "Netherite Shovel"
+        },
+        {
+          "id": "minecraft:iron_helmet",
+          "name": "Iron Helmet"
+        },
+        {
+          "id": "minecraft:golden_hoe",
+          "name": "Golden Hoe"
+        },
+        {
+          "id": "minecraft:diamond_helmet",
+          "name": "Diamond Helmet"
+        },
+        {
+          "id": "minecraft:netherite_pickaxe",
+          "name": "Netherite Pickaxe"
+        },
+        {
+          "id": "minecraft:golden_boots",
+          "name": "Golden Boots"
+        },
+        {
+          "id": "minecraft:leather_chestplate",
+          "name": "Leather Tunic"
+        },
+        {
+          "id": "minecraft:trident",
+          "name": "Trident"
+        },
+        {
+          "id": "minecraft:stone_hoe",
+          "name": "Stone Hoe"
+        },
+        {
+          "id": "minecraft:flint_and_steel",
+          "name": "Flint and Steel"
+        },
+        {
+          "id": "minecraft:diamond_boots",
+          "name": "Diamond Boots"
+        },
+        {
+          "id": "minecraft:netherite_hoe",
+          "name": "Netherite Hoe"
+        },
+        {
+          "id": "minecraft:diamond_leggings",
+          "name": "Diamond Leggings"
+        },
+        {
+          "id": "minecraft:stone_axe",
+          "name": "Stone Axe"
+        },
+        {
+          "id": "minecraft:wooden_axe",
+          "name": "Wooden Axe"
+        },
+        {
+          "id": "minecraft:wooden_sword",
+          "name": "Wooden Sword"
+        },
+        {
+          "id": "minecraft:fishing_rod",
+          "name": "Fishing Rod"
+        },
+        {
+          "id": "minecraft:diamond_hoe",
+          "name": "Diamond Hoe"
+        },
+        {
+          "id": "minecraft:golden_pickaxe",
+          "name": "Golden Pickaxe"
+        },
+        {
+          "id": "minecraft:golden_helmet",
+          "name": "Golden Helmet"
+        },
+        {
+          "id": "minecraft:stone_shovel",
+          "name": "Stone Shovel"
+        },
+        {
+          "id": "minecraft:chainmail_chestplate",
+          "name": "Chainmail Chestplate"
+        },
+        {
+          "id": "minecraft:stone_sword",
+          "name": "Stone Sword"
+        },
+        {
+          "id": "minecraft:chainmail_helmet",
+          "name": "Chainmail Helmet"
+        },
+        {
+          "id": "minecraft:carrot_on_a_stick",
+          "name": "Carrot on a Stick"
+        },
+        {
+          "id": "minecraft:wooden_hoe",
+          "name": "Wooden Hoe"
+        },
+        {
+          "id": "minecraft:diamond_sword",
+          "name": "Diamond Sword"
+        },
+        {
+          "id": "minecraft:iron_shovel",
+          "name": "Iron Shovel"
+        },
+        {
+          "id": "minecraft:chainmail_boots",
+          "name": "Chainmail Boots"
+        },
+        {
+          "id": "minecraft:netherite_sword",
+          "name": "Netherite Sword"
+        },
+        {
+          "id": "minecraft:diamond_pickaxe",
+          "name": "Diamond Pickaxe"
+        },
+        {
+          "id": "minecraft:golden_axe",
+          "name": "Golden Axe"
+        },
+        {
+          "id": "minecraft:golden_sword",
+          "name": "Golden Sword"
+        },
+        {
+          "id": "minecraft:diamond_chestplate",
+          "name": "Diamond Chestplate"
+        },
+        {
+          "id": "minecraft:netherite_chestplate",
+          "name": "Netherite Chestplate"
+        },
+        {
+          "id": "minecraft:netherite_leggings",
+          "name": "Netherite Leggings"
+        },
+        {
+          "id": "minecraft:golden_chestplate",
+          "name": "Golden Chestplate"
+        },
+        {
+          "id": "minecraft:shears",
+          "name": "Shears"
+        },
+        {
+          "id": "minecraft:iron_leggings",
+          "name": "Iron Leggings"
+        },
+        {
+          "id": "minecraft:netherite_boots",
+          "name": "Netherite Boots"
+        },
+        {
+          "id": "minecraft:golden_leggings",
+          "name": "Golden Leggings"
+        },
+        {
+          "id": "minecraft:chainmail_leggings",
+          "name": "Chainmail Leggings"
+        },
+        {
+          "id": "minecraft:stone_pickaxe",
+          "name": "Stone Pickaxe"
+        },
+        {
+          "id": "minecraft:golden_shovel",
+          "name": "Golden Shovel"
+        },
+        {
+          "id": "minecraft:leather_leggings",
+          "name": "Leather Pants"
+        },
+        {
+          "id": "minecraft:shield",
+          "name": "Shield"
+        },
+        {
+          "id": "minecraft:elytra",
+          "name": "Elytra"
+        },
+        {
+          "id": "minecraft:netherite_axe",
+          "name": "Netherite Axe"
+        },
+        {
+          "id": "minecraft:iron_sword",
+          "name": "Iron Sword"
+        }
+      ]
+    },
+    {
+      "name": "BOW",
+      "items": [
+        {
+          "id": "minecraft:bow",
+          "name": "Bow"
+        }
+      ]
+    },
+    {
+      "name": "WEARABLE",
+      "items": [
+        {
+          "id": "minecraft:turtle_helmet",
+          "name": "Turtle Shell"
+        },
+        {
+          "id": "minecraft:zombie_head",
+          "name": "Zombie Head"
+        },
+        {
+          "id": "minecraft:iron_boots",
+          "name": "Iron Boots"
+        },
+        {
+          "id": "minecraft:leather_helmet",
+          "name": "Leather Cap"
+        },
+        {
+          "id": "minecraft:netherite_helmet",
+          "name": "Netherite Helmet"
+        },
+        {
+          "id": "minecraft:leather_boots",
+          "name": "Leather Boots"
+        },
+        {
+          "id": "minecraft:iron_chestplate",
+          "name": "Iron Chestplate"
+        },
+        {
+          "id": "minecraft:iron_helmet",
+          "name": "Iron Helmet"
+        },
+        {
+          "id": "minecraft:diamond_helmet",
+          "name": "Diamond Helmet"
+        },
+        {
+          "id": "minecraft:golden_boots",
+          "name": "Golden Boots"
+        },
+        {
+          "id": "minecraft:leather_chestplate",
+          "name": "Leather Tunic"
+        },
+        {
+          "id": "minecraft:diamond_boots",
+          "name": "Diamond Boots"
+        },
+        {
+          "id": "minecraft:diamond_leggings",
+          "name": "Diamond Leggings"
+        },
+        {
+          "id": "minecraft:creeper_head",
+          "name": "Creeper Head"
+        },
+        {
+          "id": "minecraft:skeleton_skull",
+          "name": "Skeleton Skull"
+        },
+        {
+          "id": "minecraft:golden_helmet",
+          "name": "Golden Helmet"
+        },
+        {
+          "id": "minecraft:chainmail_chestplate",
+          "name": "Chainmail Chestplate"
+        },
+        {
+          "id": "minecraft:chainmail_helmet",
+          "name": "Chainmail Helmet"
+        },
+        {
+          "id": "minecraft:piglin_head",
+          "name": "Piglin Head"
+        },
+        {
+          "id": "minecraft:chainmail_boots",
+          "name": "Chainmail Boots"
+        },
+        {
+          "id": "minecraft:diamond_chestplate",
+          "name": "Diamond Chestplate"
+        },
+        {
+          "id": "minecraft:player_head",
+          "name": "Player Head"
+        },
+        {
+          "id": "minecraft:wither_skeleton_skull",
+          "name": "Wither Skeleton Skull"
+        },
+        {
+          "id": "minecraft:netherite_chestplate",
+          "name": "Netherite Chestplate"
+        },
+        {
+          "id": "minecraft:netherite_leggings",
+          "name": "Netherite Leggings"
+        },
+        {
+          "id": "minecraft:golden_chestplate",
+          "name": "Golden Chestplate"
+        },
+        {
+          "id": "minecraft:iron_leggings",
+          "name": "Iron Leggings"
+        },
+        {
+          "id": "minecraft:netherite_boots",
+          "name": "Netherite Boots"
+        },
+        {
+          "id": "minecraft:golden_leggings",
+          "name": "Golden Leggings"
+        },
+        {
+          "id": "minecraft:chainmail_leggings",
+          "name": "Chainmail Leggings"
+        },
+        {
+          "id": "minecraft:leather_leggings",
+          "name": "Leather Pants"
+        },
+        {
+          "id": "minecraft:carved_pumpkin",
+          "name": "Carved Pumpkin"
+        },
+        {
+          "id": "minecraft:shield",
+          "name": "Shield"
+        },
+        {
+          "id": "minecraft:elytra",
+          "name": "Elytra"
+        },
+        {
+          "id": "minecraft:dragon_head",
+          "name": "Dragon Head"
+        },
+        {
+          "id": "minecraft:jack_o_lantern",
+          "name": "Jack o\u0027Lantern"
+        }
+      ]
+    },
+    {
+      "name": "CROSSBOW",
+      "items": [
+        {
+          "id": "minecraft:crossbow",
+          "name": "Crossbow"
+        }
+      ]
+    },
+    {
+      "name": "VANISHABLE",
+      "items": [
+        {
+          "id": "minecraft:turtle_helmet",
+          "name": "Turtle Shell"
+        },
+        {
+          "id": "minecraft:zombie_head",
+          "name": "Zombie Head"
+        },
+        {
+          "id": "minecraft:brush",
+          "name": "Brush"
+        },
+        {
+          "id": "minecraft:diamond_axe",
+          "name": "Diamond Axe"
+        },
+        {
+          "id": "minecraft:crossbow",
+          "name": "Crossbow"
+        },
+        {
+          "id": "minecraft:iron_pickaxe",
+          "name": "Iron Pickaxe"
+        },
+        {
+          "id": "minecraft:iron_boots",
+          "name": "Iron Boots"
+        },
+        {
+          "id": "minecraft:leather_helmet",
+          "name": "Leather Cap"
+        },
+        {
+          "id": "minecraft:bow",
+          "name": "Bow"
+        },
+        {
+          "id": "minecraft:wooden_pickaxe",
+          "name": "Wooden Pickaxe"
+        },
+        {
+          "id": "minecraft:wooden_shovel",
+          "name": "Wooden Shovel"
+        },
+        {
+          "id": "minecraft:iron_hoe",
+          "name": "Iron Hoe"
+        },
+        {
+          "id": "minecraft:netherite_helmet",
+          "name": "Netherite Helmet"
+        },
+        {
+          "id": "minecraft:leather_boots",
+          "name": "Leather Boots"
+        },
+        {
+          "id": "minecraft:iron_axe",
+          "name": "Iron Axe"
+        },
+        {
+          "id": "minecraft:diamond_shovel",
+          "name": "Diamond Shovel"
+        },
+        {
+          "id": "minecraft:iron_chestplate",
+          "name": "Iron Chestplate"
+        },
+        {
+          "id": "minecraft:compass",
+          "name": "Compass"
+        },
+        {
+          "id": "minecraft:warped_fungus_on_a_stick",
+          "name": "Warped Fungus on a Stick"
+        },
+        {
+          "id": "minecraft:netherite_shovel",
+          "name": "Netherite Shovel"
+        },
+        {
+          "id": "minecraft:iron_helmet",
+          "name": "Iron Helmet"
+        },
+        {
+          "id": "minecraft:golden_hoe",
+          "name": "Golden Hoe"
+        },
+        {
+          "id": "minecraft:diamond_helmet",
+          "name": "Diamond Helmet"
+        },
+        {
+          "id": "minecraft:netherite_pickaxe",
+          "name": "Netherite Pickaxe"
+        },
+        {
+          "id": "minecraft:golden_boots",
+          "name": "Golden Boots"
+        },
+        {
+          "id": "minecraft:leather_chestplate",
+          "name": "Leather Tunic"
+        },
+        {
+          "id": "minecraft:trident",
+          "name": "Trident"
+        },
+        {
+          "id": "minecraft:stone_hoe",
+          "name": "Stone Hoe"
+        },
+        {
+          "id": "minecraft:flint_and_steel",
+          "name": "Flint and Steel"
+        },
+        {
+          "id": "minecraft:diamond_boots",
+          "name": "Diamond Boots"
+        },
+        {
+          "id": "minecraft:netherite_hoe",
+          "name": "Netherite Hoe"
+        },
+        {
+          "id": "minecraft:diamond_leggings",
+          "name": "Diamond Leggings"
+        },
+        {
+          "id": "minecraft:creeper_head",
+          "name": "Creeper Head"
+        },
+        {
+          "id": "minecraft:skeleton_skull",
+          "name": "Skeleton Skull"
+        },
+        {
+          "id": "minecraft:stone_axe",
+          "name": "Stone Axe"
+        },
+        {
+          "id": "minecraft:wooden_axe",
+          "name": "Wooden Axe"
+        },
+        {
+          "id": "minecraft:wooden_sword",
+          "name": "Wooden Sword"
+        },
+        {
+          "id": "minecraft:fishing_rod",
+          "name": "Fishing Rod"
+        },
+        {
+          "id": "minecraft:diamond_hoe",
+          "name": "Diamond Hoe"
+        },
+        {
+          "id": "minecraft:golden_pickaxe",
+          "name": "Golden Pickaxe"
+        },
+        {
+          "id": "minecraft:golden_helmet",
+          "name": "Golden Helmet"
+        },
+        {
+          "id": "minecraft:stone_shovel",
+          "name": "Stone Shovel"
+        },
+        {
+          "id": "minecraft:chainmail_chestplate",
+          "name": "Chainmail Chestplate"
+        },
+        {
+          "id": "minecraft:stone_sword",
+          "name": "Stone Sword"
+        },
+        {
+          "id": "minecraft:chainmail_helmet",
+          "name": "Chainmail Helmet"
+        },
+        {
+          "id": "minecraft:carrot_on_a_stick",
+          "name": "Carrot on a Stick"
+        },
+        {
+          "id": "minecraft:wooden_hoe",
+          "name": "Wooden Hoe"
+        },
+        {
+          "id": "minecraft:piglin_head",
+          "name": "Piglin Head"
+        },
+        {
+          "id": "minecraft:diamond_sword",
+          "name": "Diamond Sword"
+        },
+        {
+          "id": "minecraft:iron_shovel",
+          "name": "Iron Shovel"
+        },
+        {
+          "id": "minecraft:chainmail_boots",
+          "name": "Chainmail Boots"
+        },
+        {
+          "id": "minecraft:netherite_sword",
+          "name": "Netherite Sword"
+        },
+        {
+          "id": "minecraft:diamond_pickaxe",
+          "name": "Diamond Pickaxe"
+        },
+        {
+          "id": "minecraft:golden_axe",
+          "name": "Golden Axe"
+        },
+        {
+          "id": "minecraft:golden_sword",
+          "name": "Golden Sword"
+        },
+        {
+          "id": "minecraft:diamond_chestplate",
+          "name": "Diamond Chestplate"
+        },
+        {
+          "id": "minecraft:player_head",
+          "name": "Player Head"
+        },
+        {
+          "id": "minecraft:wither_skeleton_skull",
+          "name": "Wither Skeleton Skull"
+        },
+        {
+          "id": "minecraft:netherite_chestplate",
+          "name": "Netherite Chestplate"
+        },
+        {
+          "id": "minecraft:netherite_leggings",
+          "name": "Netherite Leggings"
+        },
+        {
+          "id": "minecraft:golden_chestplate",
+          "name": "Golden Chestplate"
+        },
+        {
+          "id": "minecraft:shears",
+          "name": "Shears"
+        },
+        {
+          "id": "minecraft:iron_leggings",
+          "name": "Iron Leggings"
+        },
+        {
+          "id": "minecraft:netherite_boots",
+          "name": "Netherite Boots"
+        },
+        {
+          "id": "minecraft:golden_leggings",
+          "name": "Golden Leggings"
+        },
+        {
+          "id": "minecraft:chainmail_leggings",
+          "name": "Chainmail Leggings"
+        },
+        {
+          "id": "minecraft:stone_pickaxe",
+          "name": "Stone Pickaxe"
+        },
+        {
+          "id": "minecraft:golden_shovel",
+          "name": "Golden Shovel"
+        },
+        {
+          "id": "minecraft:leather_leggings",
+          "name": "Leather Pants"
+        },
+        {
+          "id": "minecraft:carved_pumpkin",
+          "name": "Carved Pumpkin"
+        },
+        {
+          "id": "minecraft:shield",
+          "name": "Shield"
+        },
+        {
+          "id": "minecraft:elytra",
+          "name": "Elytra"
+        },
+        {
+          "id": "minecraft:netherite_axe",
+          "name": "Netherite Axe"
+        },
+        {
+          "id": "minecraft:dragon_head",
+          "name": "Dragon Head"
+        },
+        {
+          "id": "minecraft:iron_sword",
+          "name": "Iron Sword"
+        },
+        {
+          "id": "minecraft:jack_o_lantern",
+          "name": "Jack o\u0027Lantern"
+        }
+      ]
+    }
+  ],
+  "enchantments": [
+    {
+      "id": "minecraft:fortune",
+      "name": "Fortune",
+      "category": "DIGGER",
+      "min_level": 1,
+      "max_level": 3,
+      "rarity": "RARE",
+      "is_curse": false,
+      "is_discoverable": true,
+      "is_tradeable": true,
+      "is_treasure_only": false,
+      "secondary_items": [],
+      "incompatible": [
+        "minecraft:silk_touch"
+      ]
+    },
+    {
+      "id": "minecraft:sharpness",
+      "name": "Sharpness",
+      "category": "WEAPON",
+      "min_level": 1,
+      "max_level": 5,
+      "rarity": "COMMON",
+      "is_curse": false,
+      "is_discoverable": true,
+      "is_tradeable": true,
+      "is_treasure_only": false,
+      "secondary_items": [
+        {
+          "id": "minecraft:diamond_axe",
+          "name": "Diamond Axe"
+        },
+        {
+          "id": "minecraft:iron_axe",
+          "name": "Iron Axe"
+        },
+        {
+          "id": "minecraft:stone_axe",
+          "name": "Stone Axe"
+        },
+        {
+          "id": "minecraft:wooden_axe",
+          "name": "Wooden Axe"
+        },
+        {
+          "id": "minecraft:golden_axe",
+          "name": "Golden Axe"
+        },
+        {
+          "id": "minecraft:netherite_axe",
+          "name": "Netherite Axe"
+        }
+      ],
+      "incompatible": [
+        "minecraft:bane_of_arthropods",
+        "minecraft:smite"
+      ]
+    },
+    {
+      "id": "minecraft:frost_walker",
+      "name": "Frost Walker",
+      "category": "ARMOR_FEET",
+      "min_level": 1,
+      "max_level": 2,
+      "rarity": "RARE",
+      "is_curse": false,
+      "is_discoverable": true,
+      "is_tradeable": true,
+      "is_treasure_only": true,
+      "secondary_items": [],
+      "incompatible": [
+        "minecraft:depth_strider"
+      ]
+    },
+    {
+      "id": "minecraft:depth_strider",
+      "name": "Depth Strider",
+      "category": "ARMOR_FEET",
+      "min_level": 1,
+      "max_level": 3,
+      "rarity": "RARE",
+      "is_curse": false,
+      "is_discoverable": true,
+      "is_tradeable": true,
+      "is_treasure_only": false,
+      "secondary_items": [],
+      "incompatible": [
+        "minecraft:frost_walker"
+      ]
+    },
+    {
+      "id": "minecraft:knockback",
+      "name": "Knockback",
+      "category": "WEAPON",
+      "min_level": 1,
+      "max_level": 2,
+      "rarity": "UNCOMMON",
+      "is_curse": false,
+      "is_discoverable": true,
+      "is_tradeable": true,
+      "is_treasure_only": false,
+      "secondary_items": [],
+      "incompatible": []
+    },
+    {
+      "id": "minecraft:efficiency",
+      "name": "Efficiency",
+      "category": "DIGGER",
+      "min_level": 1,
+      "max_level": 5,
+      "rarity": "COMMON",
+      "is_curse": false,
+      "is_discoverable": true,
+      "is_tradeable": true,
+      "is_treasure_only": false,
+      "secondary_items": [
+        {
+          "id": "minecraft:shears",
+          "name": "Shears"
+        }
+      ],
+      "incompatible": []
+    },
+    {
+      "id": "minecraft:protection",
+      "name": "Protection",
+      "category": "ARMOR",
+      "min_level": 1,
+      "max_level": 4,
+      "rarity": "COMMON",
+      "is_curse": false,
+      "is_discoverable": true,
+      "is_tradeable": true,
+      "is_treasure_only": false,
+      "secondary_items": [],
+      "incompatible": [
+        "minecraft:blast_protection",
+        "minecraft:projectile_protection",
+        "minecraft:fire_protection"
+      ]
+    },
+    {
+      "id": "minecraft:soul_speed",
+      "name": "Soul Speed",
+      "category": "ARMOR_FEET",
+      "min_level": 1,
+      "max_level": 3,
+      "rarity": "VERY_RARE",
+      "is_curse": false,
+      "is_discoverable": false,
+      "is_tradeable": false,
+      "is_treasure_only": true,
+      "secondary_items": [],
+      "incompatible": []
+    },
+    {
+      "id": "minecraft:binding_curse",
+      "name": "Curse of Binding",
+      "category": "WEARABLE",
+      "min_level": 1,
+      "max_level": 1,
+      "rarity": "VERY_RARE",
+      "is_curse": true,
+      "is_discoverable": true,
+      "is_tradeable": true,
+      "is_treasure_only": true,
+      "secondary_items": [],
+      "incompatible": []
+    },
+    {
+      "id": "minecraft:swift_sneak",
+      "name": "Swift Sneak",
+      "category": "ARMOR_LEGS",
+      "min_level": 1,
+      "max_level": 3,
+      "rarity": "VERY_RARE",
+      "is_curse": false,
+      "is_discoverable": false,
+      "is_tradeable": false,
+      "is_treasure_only": true,
+      "secondary_items": [],
+      "incompatible": []
+    },
+    {
+      "id": "minecraft:sweeping",
+      "name": "Sweeping Edge",
+      "category": "WEAPON",
+      "min_level": 1,
+      "max_level": 3,
+      "rarity": "RARE",
+      "is_curse": false,
+      "is_discoverable": true,
+      "is_tradeable": true,
+      "is_treasure_only": false,
+      "secondary_items": [],
+      "incompatible": []
+    },
+    {
+      "id": "minecraft:mending",
+      "name": "Mending",
+      "category": "BREAKABLE",
+      "min_level": 1,
+      "max_level": 1,
+      "rarity": "RARE",
+      "is_curse": false,
+      "is_discoverable": true,
+      "is_tradeable": true,
+      "is_treasure_only": true,
+      "secondary_items": [],
+      "incompatible": [
+        "minecraft:infinity"
+      ]
+    },
+    {
+      "id": "minecraft:lure",
+      "name": "Lure",
+      "category": "FISHING_ROD",
+      "min_level": 1,
+      "max_level": 3,
+      "rarity": "RARE",
+      "is_curse": false,
+      "is_discoverable": true,
+      "is_tradeable": true,
+      "is_treasure_only": false,
+      "secondary_items": [],
+      "incompatible": []
+    },
+    {
+      "id": "minecraft:blast_protection",
+      "name": "Blast Protection",
+      "category": "ARMOR",
+      "min_level": 1,
+      "max_level": 4,
+      "rarity": "RARE",
+      "is_curse": false,
+      "is_discoverable": true,
+      "is_tradeable": true,
+      "is_treasure_only": false,
+      "secondary_items": [],
+      "incompatible": [
+        "minecraft:protection",
+        "minecraft:projectile_protection",
+        "minecraft:fire_protection"
+      ]
+    },
+    {
+      "id": "minecraft:feather_falling",
+      "name": "Feather Falling",
+      "category": "ARMOR_FEET",
+      "min_level": 1,
+      "max_level": 4,
+      "rarity": "UNCOMMON",
+      "is_curse": false,
+      "is_discoverable": true,
+      "is_tradeable": true,
+      "is_treasure_only": false,
+      "secondary_items": [],
+      "incompatible": []
+    },
+    {
+      "id": "minecraft:bane_of_arthropods",
+      "name": "Bane of Arthropods",
+      "category": "WEAPON",
+      "min_level": 1,
+      "max_level": 5,
+      "rarity": "UNCOMMON",
+      "is_curse": false,
+      "is_discoverable": true,
+      "is_tradeable": true,
+      "is_treasure_only": false,
+      "secondary_items": [
+        {
+          "id": "minecraft:diamond_axe",
+          "name": "Diamond Axe"
+        },
+        {
+          "id": "minecraft:iron_axe",
+          "name": "Iron Axe"
+        },
+        {
+          "id": "minecraft:stone_axe",
+          "name": "Stone Axe"
+        },
+        {
+          "id": "minecraft:wooden_axe",
+          "name": "Wooden Axe"
+        },
+        {
+          "id": "minecraft:golden_axe",
+          "name": "Golden Axe"
+        },
+        {
+          "id": "minecraft:netherite_axe",
+          "name": "Netherite Axe"
+        }
+      ],
+      "incompatible": [
+        "minecraft:sharpness",
+        "minecraft:smite"
+      ]
+    },
+    {
+      "id": "minecraft:silk_touch",
+      "name": "Silk Touch",
+      "category": "DIGGER",
+      "min_level": 1,
+      "max_level": 1,
+      "rarity": "VERY_RARE",
+      "is_curse": false,
+      "is_discoverable": true,
+      "is_tradeable": true,
+      "is_treasure_only": false,
+      "secondary_items": [],
+      "incompatible": [
+        "minecraft:fortune",
+        "minecraft:luck_of_the_sea",
+        "minecraft:looting"
+      ]
+    },
+    {
+      "id": "minecraft:smite",
+      "name": "Smite",
+      "category": "WEAPON",
+      "min_level": 1,
+      "max_level": 5,
+      "rarity": "UNCOMMON",
+      "is_curse": false,
+      "is_discoverable": true,
+      "is_tradeable": true,
+      "is_treasure_only": false,
+      "secondary_items": [
+        {
+          "id": "minecraft:diamond_axe",
+          "name": "Diamond Axe"
+        },
+        {
+          "id": "minecraft:iron_axe",
+          "name": "Iron Axe"
+        },
+        {
+          "id": "minecraft:stone_axe",
+          "name": "Stone Axe"
+        },
+        {
+          "id": "minecraft:wooden_axe",
+          "name": "Wooden Axe"
+        },
+        {
+          "id": "minecraft:golden_axe",
+          "name": "Golden Axe"
+        },
+        {
+          "id": "minecraft:netherite_axe",
+          "name": "Netherite Axe"
+        }
+      ],
+      "incompatible": [
+        "minecraft:sharpness",
+        "minecraft:bane_of_arthropods"
+      ]
+    },
+    {
+      "id": "minecraft:punch",
+      "name": "Punch",
+      "category": "BOW",
+      "min_level": 1,
+      "max_level": 2,
+      "rarity": "RARE",
+      "is_curse": false,
+      "is_discoverable": true,
+      "is_tradeable": true,
+      "is_treasure_only": false,
+      "secondary_items": [],
+      "incompatible": []
+    },
+    {
+      "id": "minecraft:projectile_protection",
+      "name": "Projectile Protection",
+      "category": "ARMOR",
+      "min_level": 1,
+      "max_level": 4,
+      "rarity": "UNCOMMON",
+      "is_curse": false,
+      "is_discoverable": true,
+      "is_tradeable": true,
+      "is_treasure_only": false,
+      "secondary_items": [],
+      "incompatible": [
+        "minecraft:protection",
+        "minecraft:blast_protection",
+        "minecraft:fire_protection"
+      ]
+    },
+    {
+      "id": "minecraft:loyalty",
+      "name": "Loyalty",
+      "category": "TRIDENT",
+      "min_level": 1,
+      "max_level": 3,
+      "rarity": "UNCOMMON",
+      "is_curse": false,
+      "is_discoverable": true,
+      "is_tradeable": true,
+      "is_treasure_only": false,
+      "secondary_items": [],
+      "incompatible": [
+        "minecraft:riptide"
+      ]
+    },
+    {
+      "id": "minecraft:fire_aspect",
+      "name": "Fire Aspect",
+      "category": "WEAPON",
+      "min_level": 1,
+      "max_level": 2,
+      "rarity": "RARE",
+      "is_curse": false,
+      "is_discoverable": true,
+      "is_tradeable": true,
+      "is_treasure_only": false,
+      "secondary_items": [],
+      "incompatible": []
+    },
+    {
+      "id": "minecraft:riptide",
+      "name": "Riptide",
+      "category": "TRIDENT",
+      "min_level": 1,
+      "max_level": 3,
+      "rarity": "RARE",
+      "is_curse": false,
+      "is_discoverable": true,
+      "is_tradeable": true,
+      "is_treasure_only": false,
+      "secondary_items": [],
+      "incompatible": [
+        "minecraft:loyalty",
+        "minecraft:channeling"
+      ]
+    },
+    {
+      "id": "minecraft:unbreaking",
+      "name": "Unbreaking",
+      "category": "BREAKABLE",
+      "min_level": 1,
+      "max_level": 3,
+      "rarity": "UNCOMMON",
+      "is_curse": false,
+      "is_discoverable": true,
+      "is_tradeable": true,
+      "is_treasure_only": false,
+      "secondary_items": [],
+      "incompatible": []
+    },
+    {
+      "id": "minecraft:fire_protection",
+      "name": "Fire Protection",
+      "category": "ARMOR",
+      "min_level": 1,
+      "max_level": 4,
+      "rarity": "UNCOMMON",
+      "is_curse": false,
+      "is_discoverable": true,
+      "is_tradeable": true,
+      "is_treasure_only": false,
+      "secondary_items": [],
+      "incompatible": [
+        "minecraft:protection",
+        "minecraft:blast_protection",
+        "minecraft:projectile_protection"
+      ]
+    },
+    {
+      "id": "minecraft:multishot",
+      "name": "Multishot",
+      "category": "CROSSBOW",
+      "min_level": 1,
+      "max_level": 1,
+      "rarity": "RARE",
+      "is_curse": false,
+      "is_discoverable": true,
+      "is_tradeable": true,
+      "is_treasure_only": false,
+      "secondary_items": [],
+      "incompatible": [
+        "minecraft:piercing"
+      ]
+    },
+    {
+      "id": "minecraft:vanishing_curse",
+      "name": "Curse of Vanishing",
+      "category": "VANISHABLE",
+      "min_level": 1,
+      "max_level": 1,
+      "rarity": "VERY_RARE",
+      "is_curse": true,
+      "is_discoverable": true,
+      "is_tradeable": true,
+      "is_treasure_only": true,
+      "secondary_items": [],
+      "incompatible": []
+    },
+    {
+      "id": "minecraft:aqua_affinity",
+      "name": "Aqua Affinity",
+      "category": "ARMOR_HEAD",
+      "min_level": 1,
+      "max_level": 1,
+      "rarity": "RARE",
+      "is_curse": false,
+      "is_discoverable": true,
+      "is_tradeable": true,
+      "is_treasure_only": false,
+      "secondary_items": [],
+      "incompatible": []
+    },
+    {
+      "id": "minecraft:impaling",
+      "name": "Impaling",
+      "category": "TRIDENT",
+      "min_level": 1,
+      "max_level": 5,
+      "rarity": "RARE",
+      "is_curse": false,
+      "is_discoverable": true,
+      "is_tradeable": true,
+      "is_treasure_only": false,
+      "secondary_items": [],
+      "incompatible": []
+    },
+    {
+      "id": "minecraft:channeling",
+      "name": "Channeling",
+      "category": "TRIDENT",
+      "min_level": 1,
+      "max_level": 1,
+      "rarity": "VERY_RARE",
+      "is_curse": false,
+      "is_discoverable": true,
+      "is_tradeable": true,
+      "is_treasure_only": false,
+      "secondary_items": [],
+      "incompatible": [
+        "minecraft:riptide"
+      ]
+    },
+    {
+      "id": "minecraft:piercing",
+      "name": "Piercing",
+      "category": "CROSSBOW",
+      "min_level": 1,
+      "max_level": 4,
+      "rarity": "COMMON",
+      "is_curse": false,
+      "is_discoverable": true,
+      "is_tradeable": true,
+      "is_treasure_only": false,
+      "secondary_items": [],
+      "incompatible": [
+        "minecraft:multishot"
+      ]
+    },
+    {
+      "id": "minecraft:quick_charge",
+      "name": "Quick Charge",
+      "category": "CROSSBOW",
+      "min_level": 1,
+      "max_level": 3,
+      "rarity": "UNCOMMON",
+      "is_curse": false,
+      "is_discoverable": true,
+      "is_tradeable": true,
+      "is_treasure_only": false,
+      "secondary_items": [],
+      "incompatible": []
+    },
+    {
+      "id": "minecraft:luck_of_the_sea",
+      "name": "Luck of the Sea",
+      "category": "FISHING_ROD",
+      "min_level": 1,
+      "max_level": 3,
+      "rarity": "RARE",
+      "is_curse": false,
+      "is_discoverable": true,
+      "is_tradeable": true,
+      "is_treasure_only": false,
+      "secondary_items": [],
+      "incompatible": [
+        "minecraft:silk_touch"
+      ]
+    },
+    {
+      "id": "minecraft:infinity",
+      "name": "Infinity",
+      "category": "BOW",
+      "min_level": 1,
+      "max_level": 1,
+      "rarity": "VERY_RARE",
+      "is_curse": false,
+      "is_discoverable": true,
+      "is_tradeable": true,
+      "is_treasure_only": false,
+      "secondary_items": [],
+      "incompatible": [
+        "minecraft:mending"
+      ]
+    },
+    {
+      "id": "minecraft:flame",
+      "name": "Flame",
+      "category": "BOW",
+      "min_level": 1,
+      "max_level": 1,
+      "rarity": "RARE",
+      "is_curse": false,
+      "is_discoverable": true,
+      "is_tradeable": true,
+      "is_treasure_only": false,
+      "secondary_items": [],
+      "incompatible": []
+    },
+    {
+      "id": "minecraft:power",
+      "name": "Power",
+      "category": "BOW",
+      "min_level": 1,
+      "max_level": 5,
+      "rarity": "COMMON",
+      "is_curse": false,
+      "is_discoverable": true,
+      "is_tradeable": true,
+      "is_treasure_only": false,
+      "secondary_items": [],
+      "incompatible": []
+    },
+    {
+      "id": "minecraft:respiration",
+      "name": "Respiration",
+      "category": "ARMOR_HEAD",
+      "min_level": 1,
+      "max_level": 3,
+      "rarity": "RARE",
+      "is_curse": false,
+      "is_discoverable": true,
+      "is_tradeable": true,
+      "is_treasure_only": false,
+      "secondary_items": [],
+      "incompatible": []
+    },
+    {
+      "id": "minecraft:thorns",
+      "name": "Thorns",
+      "category": "ARMOR_CHEST",
+      "min_level": 1,
+      "max_level": 3,
+      "rarity": "VERY_RARE",
+      "is_curse": false,
+      "is_discoverable": true,
+      "is_tradeable": true,
+      "is_treasure_only": false,
+      "secondary_items": [
+        {
+          "id": "minecraft:turtle_helmet",
+          "name": "Turtle Shell"
+        },
+        {
+          "id": "minecraft:iron_boots",
+          "name": "Iron Boots"
+        },
+        {
+          "id": "minecraft:leather_helmet",
+          "name": "Leather Cap"
+        },
+        {
+          "id": "minecraft:netherite_helmet",
+          "name": "Netherite Helmet"
+        },
+        {
+          "id": "minecraft:leather_boots",
+          "name": "Leather Boots"
+        },
+        {
+          "id": "minecraft:iron_helmet",
+          "name": "Iron Helmet"
+        },
+        {
+          "id": "minecraft:diamond_helmet",
+          "name": "Diamond Helmet"
+        },
+        {
+          "id": "minecraft:golden_boots",
+          "name": "Golden Boots"
+        },
+        {
+          "id": "minecraft:diamond_boots",
+          "name": "Diamond Boots"
+        },
+        {
+          "id": "minecraft:diamond_leggings",
+          "name": "Diamond Leggings"
+        },
+        {
+          "id": "minecraft:golden_helmet",
+          "name": "Golden Helmet"
+        },
+        {
+          "id": "minecraft:chainmail_helmet",
+          "name": "Chainmail Helmet"
+        },
+        {
+          "id": "minecraft:chainmail_boots",
+          "name": "Chainmail Boots"
+        },
+        {
+          "id": "minecraft:netherite_leggings",
+          "name": "Netherite Leggings"
+        },
+        {
+          "id": "minecraft:iron_leggings",
+          "name": "Iron Leggings"
+        },
+        {
+          "id": "minecraft:netherite_boots",
+          "name": "Netherite Boots"
+        },
+        {
+          "id": "minecraft:golden_leggings",
+          "name": "Golden Leggings"
+        },
+        {
+          "id": "minecraft:chainmail_leggings",
+          "name": "Chainmail Leggings"
+        },
+        {
+          "id": "minecraft:leather_leggings",
+          "name": "Leather Pants"
+        }
+      ],
+      "incompatible": []
+    },
+    {
+      "id": "minecraft:looting",
+      "name": "Looting",
+      "category": "WEAPON",
+      "min_level": 1,
+      "max_level": 3,
+      "rarity": "RARE",
+      "is_curse": false,
+      "is_discoverable": true,
+      "is_tradeable": true,
+      "is_treasure_only": false,
+      "secondary_items": [],
+      "incompatible": [
+        "minecraft:silk_touch"
+      ]
+    }
+  ]
+}
