@@ -1,9 +1,15 @@
 {
   "latest": {
     "release": "1.19.3",
-    "snapshot": "1.19.4-pre4"
+    "snapshot": "1.19.4-rc1"
   },
   "listings": [
+    {
+      "id": "1.19.4-pre4",
+      "url": "https://techchrism.github.io/enchantment-json-exporter/versions/1.19.4-pre4.json",
+      "type": "snapshot",
+      "releaseTime": "Mar 8, 2023, 1:08:22 PM"
+    },
     {
       "id": "1.19.4-pre3",
       "url": "https://techchrism.github.io/enchantment-json-exporter/versions/1.19.4-pre3.json",
@@ -215,10 +221,10 @@
       "releaseTime": "Jun 7, 2022, 9:42:18 AM"
     },
     {
-      "id": "1.19.4-pre4",
-      "url": "https://techchrism.github.io/enchantment-json-exporter/versions/1.19.4-pre4.json",
+      "id": "1.19.4-rc1",
+      "url": "https://techchrism.github.io/enchantment-json-exporter/versions/1.19.4-rc1.json",
       "type": "snapshot",
-      "releaseTime": "Mar 8, 2023, 1:08:22 PM"
+      "releaseTime": "Mar 9, 2023, 2:35:50 PM"
     }
   ]
 }
